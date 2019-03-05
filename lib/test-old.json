@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "text": "First",
+    "excluded": true
+  },
+  {
+    "id": 2,
+    "text": "Second"
+  }
+]
