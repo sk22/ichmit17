@@ -1,4 +1,5 @@
 const tweetElement = document.querySelector('.tweet')
+const countElement = document.querySelector('#count')
 
 const randomIndex = length => Math.floor(Math.random() * length)
 
@@ -10,6 +11,7 @@ async function run() {
   const filteredTweets = tweets.filter(tweet => !tweet.excluded)
   const randomTweet = filteredTweets[randomIndex(filteredTweets.length)]
 
+  countElement.innerText = filteredTweets.length.toString()
   tweet = randomTweet
   tweetElement.innerText = randomTweet.text
 }
