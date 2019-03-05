@@ -15,8 +15,3 @@ async function run() {
 }
 
 run()
-
-const reportLink = document.getElementById('report')
-reportLink.addEventListener('click', function(event) {
-  this.href = `report.html?id=${tweet.id}`
-})
